@@ -23,6 +23,9 @@ body{
 a{
     font-size: 18px;
     font-weight: bold;
+
+    text-decoration: none;
+    color: black;
 }
 
 h1{
@@ -132,12 +135,12 @@ nav a:hover{
 
 .contenu{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .boiteContenu{
     text-align: center;
-    
-    
+    margin: 0 185px 70px 185px;
 }
 
 .cartes{
@@ -148,5 +151,52 @@ nav a:hover{
 
 article{
     background-color: #fff;
-    
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+article a{
+    margin-top: auto;
+    align-self: center;
+
+    background-color: #E67522;
+    padding: 10px 20px 10px 20px;
+
+    border: 2px solid #3D3D3D;
+    border-radius: 5px;
+}
+
+/*- footer -*/
+
+footer{
+    background-color: #CCDAE3;
+}
+
+footer p{
+    margin: 0;
+    margin-top: 60px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.icones{
+    padding-top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    color: white;
+}
+
+span{
+    background-color: #E67522;
+
+    padding: 17px;
+    border: 2px solid white;
+    border-radius: 100%;
 }
