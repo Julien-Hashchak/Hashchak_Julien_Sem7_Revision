@@ -1,0 +1,57 @@
+/*BASE*/
+
+html{
+    box-sizing: border-box;
+    /*font-size: 62.5%;*/
+}
+*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #E6EDF1;
+    font-family: 'Merriweather', 'Roboto';
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*ELEMENTS*/
+
+/*COMPONENTS*/
+
+/*- header- */
+
+header{
+    background-color: #379AE3;
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*- Navigation -*/
+
+nav p{
+    
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #E6EDF1;
+}
