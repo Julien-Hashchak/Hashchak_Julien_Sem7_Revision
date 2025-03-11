@@ -14,11 +14,32 @@ body{
 }
 
 .wrapper{
-    max-width: 1440px;
+    max-width: 1171px;
     margin: 0 auto;
 }
 
 /*ELEMENTS*/
+
+a{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h1{
+    color: #E67522;
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+h2{
+    margin-top: 0;
+    text-align: center;
+
+    font-size: 64px;
+    font-weight: bold;
+}
 
 /*COMPONENTS*/
 
@@ -32,12 +53,15 @@ header .wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-/*- Navigation -*/
 
-nav p{
-    
 }
+
+header p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*- Navigation -*/
 
 nav ul{
     display: flex;
@@ -48,10 +72,81 @@ nav ul{
 nav a{
     text-decoration: none;
     color: black;
-    font-size: 18px;
-    font-weight: bold;
+    
 }
 
 nav a:hover{
     color: #E6EDF1;
+}
+
+.billets{
+    background-color: #fff;
+    color: black;
+    padding: 7px 30px 7px 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+/*- hero -*/
+
+.hero{
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero .wrapper{
+
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    height: 637px;
+}
+
+.boite{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+}
+
+.boite p{
+    color: white;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.boite a{
+    background-color: #E67522;
+    color: white;
+
+    padding: 7px 40px 7px 40px;   
+    border-radius: 5px; 
+
+    text-decoration: none;
+}
+
+/*- contenu -*/
+
+.contenu{
+    margin-top: 100px;
+}
+
+.boiteContenu{
+    text-align: center;
+    
+    
+}
+
+.cartes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+article{
+    background-color: #fff;
+    
 }
