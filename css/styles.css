@@ -26,6 +26,7 @@ a{
 
     text-decoration: none;
     color: black;
+    font-family: "roboto";
 }
 
 h1{
@@ -42,6 +43,16 @@ h2{
 
     font-size: 64px;
     font-weight: bold;
+    margin-bottom: 4px;
+}
+
+h3{
+    font-size: 36px;
+}
+
+p{
+    line-height: 150%;
+    font-family: "roboto";
 }
 
 /*COMPONENTS*/
@@ -82,6 +93,10 @@ nav a:hover{
     color: #E6EDF1;
 }
 
+.acheter a:hover{
+    background-color: brown;
+}
+
 .billets{
     background-color: #fff;
     color: black;
@@ -119,6 +134,7 @@ nav a:hover{
     color: white;
     margin: 0;
     margin-bottom: 40px;
+    font-weight: bold;
 }
 
 .boite a{
@@ -129,6 +145,11 @@ nav a:hover{
     border-radius: 5px; 
 
     text-decoration: none;
+    
+}
+
+.boite a:hover{
+    background-color: brown;
 }
 
 /*- contenu -*/
@@ -155,6 +176,7 @@ article{
 
     display: flex;
     flex-direction: column;
+    height: 785px;
 }
 
 article a{
@@ -166,6 +188,29 @@ article a{
 
     border: 2px solid #3D3D3D;
     border-radius: 5px;
+
+    margin-bottom: 40px;
+}
+
+article a:hover{
+    background-color: brown;
+}
+
+article p{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    font-size: 18px;
+}
+
+article span.premier{
+    position: absolute;
+    right: 0;
+    
+}
+
+.aligneBouton{
+    position: relative;
 }
 
 /*- footer -*/
@@ -179,6 +224,7 @@ footer p{
     margin-top: 60px;
     text-align: center;
     padding-bottom: 50px;
+    font-size: 14px;
 }
 
 .icones{
@@ -193,10 +239,32 @@ footer p{
     color: white;
 }
 
-span{
+footer span{
     background-color: #E67522;
 
     padding: 17px;
     border: 2px solid white;
     border-radius: 100%;
+}
+
+/*- modale -*/
+
+div.modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modale.visible{
+    display: flex;
 }
